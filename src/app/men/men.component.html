@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+          <tr class="table-secondary">
+              <th>Name</th>
+              <th>Type</th>
+              <th>Muscle</th>
+              <th>Equipement</th>
+              <th>Difficulty</th>
+              <th>Instructions</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <th class="table-success" >{{item.name}}</th>
+          <th class="table-primary">{{item.type}}</th>
+          <th class="table-danger">{{item.muscle}}</th>
+          <th class="table-info">{{item.equipment}}</th>
+          <th class="table-warning">{{item.difficulty}}</th>
+          <th class="light">{{item.instructions}}</th>
+          
+         
+        </tr>
+      </tbody>
+  </table>
+  <div *ngIf="isLoading" class="loader">
+    <div class="spinner"></div>
+   
+  </div>
+
+  </div>
+  

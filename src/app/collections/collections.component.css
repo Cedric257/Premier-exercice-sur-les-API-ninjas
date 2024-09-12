@@ -1,0 +1,28 @@
+.foto{
+    gap: 10px;
+}
+.image{
+    cursor: pointer;
+    margin-top: 20px;
+   
+    
+    img:hover{
+        border: 3px solid #ff4500 ;
+        background-color: rgba(255, 0, 0, 0.5);
+        opacity: 0.5;
+        
+    }
+  
+  }
+  .colore{
+    background-color: bisque;
+    padding-left: 30px;
+   
+   
+  }
+  .icons{
+    color: #f7af44 !important;
+    
+    background: none;
+  }
+  

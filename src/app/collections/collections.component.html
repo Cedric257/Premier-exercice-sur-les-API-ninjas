@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img [src]="mainImageUrl" class="w-100 h-75 rounded" alt="">
+                  <div class="foto d-flex mt-3">
+                     <div class="image" (click)="changeMainImage(Image1Url)">
+                        <img [src]="Image1Url" class="w-100 h-100 rounded" alt="">
+                     </div>
+                     <div class="image" (click)="changeMainImage(Image2Url)">
+                      <img [src]="Image2Url"  class="w-100 h-100 rounded" alt="">
+                     </div> 
+                     <div class="image" (click)="changeMainImage(Image3Url)">
+                      <img [src]="Image3Url" class="w-100 h-100 rounded" alt="">
+                     </div>
+                     <div class="image" (click)="changeMainImage(Image4Url)">
+                      <img [src]="Image4Url" class="w-100 h-100 rounded" alt="">
+                     </div>
+               
+                    </div>
+        </div>
+        <div class="col-md-4 py-5">
+            <p class="colr text-warning">SNEAKER COMPANY</p>
+            <h1 class="fw-bold">Fall Limited Edition Sneakers</h1>
+            <p class="fw-lighter">Tehse low-profile sneakers are your perfect casual wear xompamion.
+                Featuring a durable rubber outer sole , they'll withstand everything the weather can offer.
+            </p>
+            <div class="row">
+                <div class="col-4">
+                    <h2 class="fw-bolder">$125.00</h2>
+                </div>
+                <div class="col-2 py-2 mx-2 float-start">
+                    <p class="pour rounded bg-warning px-1">50%</p>
+                </div>
+            </div>
+            <p class="fw-light text-decoration-line-through">$250.00</p>
+                
+            <div class="row">
+                <div class="col-6">
+                    <div class="colore rounded">
+                    <button class="icons text-warning border-0" id="minus" (click)="decrement()"><h3>-</h3></button>
+                    <span class="mx-4" id="show">{{count}}</span>
+                    <button class="icons text-warning border-0" id="plus" (click)="increment()"><h3>+</h3></button>
+
+                </div>
+            </div>
+                <div class="col-6">
+                    <button class="btn btn-warning text-white fw-bold w-100"><i class="fa-solid fa-cart-shopping m-2"></i>Add to Card</button>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
